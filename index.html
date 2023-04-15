@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Primeiros Passos com HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="indice">Índice</h2>
+    <ol>
+        <li><a href="#origem">Origem do HTML</a></li>
+        <li><a href="#clients">O que são <em>Clients</em>?</a></li>
+        <li><a href="#servers">O que são <em>Servers</em>?</a></li>
+        <li><a href="#tags">O que são Tags e as principais utilizadas para quem esta começando HTML?</a></li>
+        <li><a href="#listas"><del>Entendendo a diferença entre listas ordenadas e não ordenadas</del></a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ol>
+
+    <h2 id="origem">Origem do HTML</h2>
+    <p><strong><u><abbr title="Hyper Text Markup Language">HTML</abbr>:</u> </strong> Significa <em>Hyper Text Markup Language</em> ou traduzindo para o <u>português</u> Linguagem de Marcação de HiperTexto. Foi desenvolvida por Tim Berners-Lee no ano de 1991.</p>
+    <p>Ao contrário do que muita gente pensa, o HTML não é uma linguagem de programação, como <em>JavaScript, Python, PHP,</em> entre outras linguagens que são do <em>Servers Side</em>, ele é, como o próprio nome diz uma <strong>Linguagem de Marcação</strong>, ou seja, uma pessoa que utiliza o HTML <u>não programa</u> com HTML, mas sim <strong><em>Desenvolve</em></strong> com HTML, ele esta no <em>Clients Side</em>.</p>
+    <small><a href="#indice">Voltar ao índice</a></small>
+
+    <h2 id="clients">O que são <em>Clients</em>?</h2>
+    <p><em>Clients</em> são as <mark>pessoas que consomem a informação da internet por meio de algum dispositivo</mark>, essas informações são encaminhadas dos servidores ou <em>serves</em> que entre outras coisas hospedam os sites que são acessados. Os <em>serves</em> ao enviar os arquivos de <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, imagens e áudio, entre outros para para navegador via cache, assim dessa forma o navegador recodifica os arquivos e exibe na tela do dispositivo.</p>
+    <p>Os principais dispositivos utilizados atualmente pelos usuários são:</p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li>Smartphones;</li>
+        <li>Notebooks;</li>
+        <li>Tablets;</li>
+        <li>Smart Tvs.</li>
     </ul>
+    <small><a href="#indice">Voltar ao índice</a></small>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="servers">O que são <em>Servers</em>?</h2>
+    
+    <blockquote cite="https://www.dio.me/articles/resumo-da-aula-entendendo-comunicacao-client-x-server">
+        Os <em>Servers</em>, ou servidores podem ser <mark>locais onde uma rede de computadores conectados acessam para ter acesso a arquivos e informações</mark> ou servidores de internet, onde estão hospedados as informações que os Clients terão acesso.  Os servidores podem ser dos tipos de <strong>arquivo, segurança (Firewall), Streaming, E-mail e Web</strong>.
+    </blockquote>
+    <small><a href="#indice">Voltar ao índice</a></small>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="tags">O que são Tags e as principais utilizadas para quem esta começando HTML?</h2>
+    <p>As Tags <abbr title="Hyper Text Markup Language">HTML</abbr> são etiquetas ou marcadores que indicam ao navegador como <mark>interpretar e exibir</mark> o conteúdo de uma página da web. Elas são usadas para definir a estrutura e o <em>layout</em> da página, bem como para adicionar e formatar o texto, imagens, links e outros elementos que compõem a página</p>
+    <p>Para quem esta começando a aprender essa linguagem Web, as principais Tags utilizadas são:</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><strong>h1 a h6</strong> - Define os cabeçalhos da página, sendo o <u>h1</u> o mais importante e o <u>h6</u> o menos importante.</li>
+        <li><strong>p</strong> - Define um parágrafo de texto.</li>
+        <li><strong>a</strong> - Define um link para outra página ou recurso na web</li>
+        <li><strong>img</strong> - Define uma imagem a ser exibida na página.</li>
+        <li><strong>ul, ol, li</strong> - Define uma lista não ordenada <u>ul</u>, uma lista ordenada <u>ol</u> e um item de lista <u>li</u></li>
+        <li><strong>form, input, button, select</strong> - Define um formulário <u>form</u>, um campo de entrada de dados <u>input</u>, um botão <u>button</u> e uma lista de opções <u>select</u></li>
     </ul>
+    <small><a href="#indice">Voltar ao índice</a></small>
 
+    <h2 id="listas"><del>Entendendo a diferença entre listas ordenadas e não ordenadas</del></h2>
+    <small><a href="#indice">Voltar ao índice</a></small>
+
+    <h2 id="links">Links de referências</h2>
+    <p>Abaixo você encontra os lins com as principais informações sobre <abbr title="Hyper Text Markup Language">HTML</abbr> inseridas em nosso site. Nossa principal fonte foi a <strong>DIO.<sub>makethechange</sub></strong></p>
+    <ul>
+        <li><a href="https://www.dio.me/articles/resumo-da-aula-entendendo-comunicacao-client-x-server" target="_blank">Dio.me - ClientxServer</a></li>
+        <li><a href="http://w3c.org" target="_blank">W3C - HTML e lista de Tags</a></li>
+        <li><a href="https://www.youtube.com/watch?v=YfVgE2sMdwg" target="_blank">YouTube.com - Utilizando a Tag Mark</a></li>
+        <li><a href="https://www.dio.me/articles/conhecendo-um-pouco-sobre-html" target="_blank">Dio.me - conhecendo-um-pouco-sobre-html</li>
+        <li><a href="https://www.youtube.com/watch?v=NgiwnolBSMs" target="_blank">YouTube.com - Utilizando a Tag Blockquote</a></li>
+    </ul>
+    <small><a href="#inicio">Voltar ao início</a></small>
+    <p><small>Desenvolvido por: Filipe Bernardo <sup>®</sup></small></p>
 </body>
 </html>
